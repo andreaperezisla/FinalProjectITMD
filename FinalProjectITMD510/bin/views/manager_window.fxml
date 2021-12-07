@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.managerwindowController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1e1e1e;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="252.0" layoutY="89.0" text="Manager Window" textFill="#eeb752" />
+            <ImageView fitHeight="81.0" fitWidth="120.0" layoutX="243.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../application/images/sceneslogo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="manage_Reservations" layoutX="233.0" layoutY="145.0" mnemonicParsing="false" onAction="#manageReservations" style="-fx-background-color: #eeb752;" text="Manage Reservations" />
+            <Button fx:id="manage_Users" layoutX="253.0" layoutY="194.0" mnemonicParsing="false" onAction="#manageUsers" style="-fx-background-color: #eeb752;" text="Manage Users" />
+            <Button fx:id="log_out" layoutX="491.0" layoutY="35.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #eeb752;" text="Log Out" />
+            <Button fx:id="create_Users" layoutX="257.0" layoutY="242.0" mnemonicParsing="false" onAction="#createUsers" style="-fx-background-color: #eeb752;" text="Create Users" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

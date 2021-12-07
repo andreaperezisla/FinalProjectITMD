@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.managereservationmanagerController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1e1e1e;" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1e1e1e;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="back" layoutX="482.0" layoutY="35.0" mnemonicParsing="false" onAction="#backB" style="-fx-background-color: #eeb752;" text="Back" />
+            <Button fx:id="save" layoutX="487.0" layoutY="262.0" mnemonicParsing="false" onAction="#SaveReservation" style="-fx-background-color: #eeb752;" text="Save" visible="false" />
+            <DatePicker fx:id="update_date" layoutX="425.0" layoutY="192.0" prefHeight="24.0" prefWidth="162.0" visible="false" />
+            <TextField fx:id="update_time" layoutX="426.0" layoutY="229.0" visible="false" />
+            <Button fx:id="update" layoutX="444.0" layoutY="147.0" mnemonicParsing="false" onAction="#UpdateReservation" style="-fx-background-color: #eeb752;" text="Update Reservation" />
+            <Button fx:id="delete" layoutX="459.0" layoutY="102.0" mnemonicParsing="false" onAction="#DeleteReservation" style="-fx-background-color: #eeb752;" text="Delete Record" />
+            <ImageView fitHeight="76.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../application/images/sceneslogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="220.0" layoutY="37.0" text="Manage reservations - Manager" textFill="#eeb752" />
+            <TableView fx:id="reservations_table" layoutX="29.0" layoutY="79.0" prefHeight="227.0" prefWidth="383.0">
+               <columns>
+                  <TableColumn fx:id="colDate" prefWidth="100.0" text="Date" />
+                  <TableColumn fx:id="colTime" prefWidth="60.0" text="Time" />
+                  <TableColumn fx:id="colType" prefWidth="94.0" text="Type of Hair" />
+                  <TableColumn fx:id="colWash" prefWidth="66.0" text="Wash" />
+                  <TableColumn fx:id="colPrice" prefWidth="55.0" text="Price" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
